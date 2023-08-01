@@ -1,0 +1,78 @@
+/* Reset some default styles */
+body,
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color and font styles */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Set the container for the 3D scene */
+#canvas-container {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+/* Center the 3D scene within the container */
+.canvas-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the project icons */
+.project-icon {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff9900; /* Adjust the background color as needed */
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust the styles when hovering over a project icon */
+.project-icon:hover {
+  background-color: #e64d00; /* Adjust the hover color as needed */
+}
+
+/* Position the project icons in a circular formation */
+.project-icon.rotate {
+  position: absolute;
+}
+
+/* Set the initial rotation position for the project icons */
+.project-icon.rotate:nth-child(1) {
+  transform: rotateY(0deg);
+}
+
+.project-icon.rotate:nth-child(2) {
+  transform: rotateY(40deg);
+}
+
+#backButton {
+  position: absolute;
+  bottom: 100px; /* Customize the button's position */
+  right: 100px; /* Customize the button's position */
+  display: none;
+}
+
+#messageBox {
+  display: block; /* Initially hide the box with text */
+  position: absolute;
+  top: 50%; /* Customize the vertical position */
+  right: 5%; /* Customize the horizontal position */
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0; /* Customize the box background color */
+  padding: 10px;
+  border: 2px solid #ccc; /* Customize the box border */
+  border-radius: 5px;
+  font-size: 18px; /* Customize the font size */
+}
