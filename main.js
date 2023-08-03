@@ -85,6 +85,14 @@ function onClick(event) {
           button.style.display = 'block';
           console.log("Wow that's github!");
           break;
+        case "NodeJS":
+          status = "Zoom";
+          camera.position.x = scale;
+          camera.position.z = scale;
+          camera.lookAt(new THREE.Vector3(0, 0, 0));
+          button.style.display = 'block';
+          descriptionText.innerHTML = `This is NodeJS.<br>It has been under practices`;
+          break;
         case undefined:
           break;
         default:
